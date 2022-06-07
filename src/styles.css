@@ -1,0 +1,28 @@
+:root {
+    --darkblue: #053F5C;
+    --blue: #429EBD;
+    --lightblue: #9FE7F5;
+    --orange: #F27F0C;
+    --yellow: #F7AD19;
+    --gray: #808080;
+}
+
+body {
+  background: url("./assets/cloudy.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  color: var(--gray);
+}
+
+.btn-primary {
+  background-color: var(--orange);
+  border-radius: 0;
+  border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--orange);
+  filter: brightness(130%);
+}
