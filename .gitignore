@@ -26,3 +26,12 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+
+# Local Netlify folder
+.netlify
+
+#env
+.env
+
+#vscode
+.vscode

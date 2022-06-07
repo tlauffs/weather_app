@@ -8,21 +8,53 @@
 }
 
 body {
-  background: url("./assets/cloudy.jpg");
-  background-size: cover;
-  min-height: 100vh;
-  color: var(--gray);
+    background: url("./assets/cloudy.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    color: var(--gray);
+  }
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    min-height: 100vh;
 }
 
-.btn-primary {
+.search-col{
+    grid-column: span 12;
+}
+.content-col{
+    grid-column: span 12;
+}
+
+@media screen and (min-width: 40em) {
+    .search-col{
+        grid-column: span 6;
+    }
+    .content-col{
+        grid-column: span 6;
+    }
+}
+@media screen and (min-width: 64em) {
+    .search-col{
+        grid-column: span 4;
+    }
+    .content-col{
+        grid-column: span 8;
+    }
+}
+
+.btn {
   background-color: var(--orange);
   border-radius: 0;
+  cursor: pointer;
+  padding: 0.5rem 0.7rem;
   border: none;
 }
 
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active {
-  background-color: var(--orange);
-  filter: brightness(130%);
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: var(--yellow);
 }
